@@ -1,0 +1,13 @@
+<div>
+    <div class="split left padding">
+      <label>
+        Seconds elapsed: {{time}}
+      </label>
+      <label class="right" [ngClass]="{'error':!ssoEntered}">Please enter SSO: </label>
+      <input #sso/>
+    </div>
+    <div class="split">
+      <button mat-raised-button color="accent" (click)="onSubmit(sso.value)"><b>Submit</b></button>
+    </div>
+  </div>
+  
